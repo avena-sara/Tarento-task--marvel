@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #060606;
+    color: rgb(10, 10, 10);
+}
+
+
+/* Header Section */
+header {
+    background-color: #000000; /* Black background */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #faf6f6; /* Red for the title */
+}
+
+.marvel {
+    background-color: red; /* Red background for the "MARVEL" text */
+    padding: 5px 10px; /* Padding around the word "MARVEL" */
+    border-radius: 5px; /* Optional: Add rounded corners for a cleaner look */
+}
+
+
+/* Avengers Section */
+.avengers-intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.avengers-intro h2 {
+    font-size: 25px;
+    color: #e62429; /* Red for subheading */
+    text-align: left;
+}
+
+.avengers-intro p {
+    font-size: 18px;
+    color: rgb(196, 85, 85);
+    text-align: left;
+}
+
+/* Character Section */
+.characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.character {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Same height for each character section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: black;
+    overflow: hidden;
+    background-size: cover; /* Ensure the image covers the container */
+}
+
+/* Character 1 (Thor) */
+.character:nth-child(1) {
+    background-image: url('thor.jpg');
+    background-position: 10% 0%; /* Adjust to control the cropping of Thor's image */
+}
+
+/* Character 2 (Iron Man) */
+.character:nth-child(2) {
+    background-image: url('ironman.jpg');
+    background-position: 30% 0%; /* Adjust to control the cropping of Iron Man's image */
+}
+
+/* Character 3 (Captain America) */
+.character:nth-child(3) {
+    background-image: url('captainamerica.jpg');
+    background-position: 30% 0%; /* Adjust to control the cropping of Captain America's image */
+}
+
+/* Character 4 (Hulk) */
+.character:nth-child(4) {
+    background-image: url('hulk.jpg');
+    background-position: 50% 0%; /* Adjust to control the cropping of Hulk's image */
+}
+
+/* Character 5 (Black Widow) */
+.character:nth-child(5) {
+    background-image: url('blackwidow.jpg');
+    background-position: 50% 0%; /* Adjust to control the cropping of Black Widow's image */
+}
+
+/* Character 6 (Spider Man) */
+.character:nth-child(6) {
+    background-image: url('spiderman.jpg');
+    background-position: 0% 10%; /* Adjust to control the cropping of Spider Man's image */
+}
+
+/* Image styling */
+.character img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to fill the container */
+}
+
+/* Adjusting text on image */
+.character .info {
+    position: absolute;
+    top: 50%; /* Adjust text vertically */
+    left: 50%; /* Adjust text horizontally */
+    transform: translate(-50%, -50%); /* Center text */
+    color: red;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent background for readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Optionally adjust the text position for each character */
+.character:nth-child(1) .info {
+    left: 15%; /* Example: Move text lower for Thor */
+    color:#060606;
+}
+.character:nth-child(2) .info {
+    left: 20%; /* Example: Move text higher for Iron Man */
+    color:#c52020;
+}
+.character:nth-child(3) .info {
+    left: 18%; /* Example: Move text slightly down for Captain America */
+    color:#c52020;
+    top:20%;
+}
+.character:nth-child(4) .info {
+    left: 80%; /* Example: Move text higher for Hulk */
+    color:#060606;
+}
+.character:nth-child(5) .info {
+    left: 20%; /* Example: Move text to the middle for Black Widow */
+    color:#060606;
+}
+.character:nth-child(6) .info {
+    left: 74%; /* Example: Move text to the middle for Spider Man */
+    top: 85%;
+}
+
+.character h2 {
+    margin: 0;
+    font-size: 44px;
+}
+
+.character p {
+    margin-top: 5px;
+    font-size: 18px;
+}
